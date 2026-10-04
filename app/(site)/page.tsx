@@ -318,23 +318,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== FAQ ===== */}
-      <section className="section">
-        <div className="container narrow">
-          <h2 className="title">
-            Ko‘p beriladigan <span className="gold-text">savollar</span>
-          </h2>
-          <div className="faq">
-            {faqs.map((f) => (
-              <details key={f.q}>
-                <summary>{f.q}</summary>
-                <p>{f.a}</p>
-              </details>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ===== FORMA ===== */}
       <section className="section section-form" id="ariza">
         <div className="hero-glow" aria-hidden />
@@ -363,6 +346,23 @@ export default function Home() {
           <div className="form-card">
             <h3>Ro‘yxatdan o‘tish</h3>
             <LeadForm />
+          </div>
+        </div>
+      </section>
+
+      {/* ===== FAQ ===== */}
+      <section className="section">
+        <div className="container narrow">
+          <h2 className="title">
+            Ko‘p beriladigan <span className="gold-text">savollar</span>
+          </h2>
+          <div className="faq">
+            {faqs.map((f) => (
+              <details key={f.q}>
+                <summary>{f.q}</summary>
+                <p>{f.a}</p>
+              </details>
+            ))}
           </div>
         </div>
       </section>
